@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,18 +20,11 @@ p {
 }
 
 .landing {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
-
 .landing .container {
   margin: 0 auto;
   width: 90%;
@@ -40,37 +32,25 @@ p {
   background-color: #1c193b;
   border-radius: 10px;
 }
-
 .landing .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .landing .container .row .info {
   padding: 4rem;
   width: 50%;
 }
-
 .landing .container .row .info p {
   line-height: 25px;
   width: 80%;
 }
-
 .landing .container .row .info span {
   color: #a75dd7;
 }
-
 .landing .container .row .image {
   width: 50%;
   height: 480px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 68, 161, 0.6))), url("/images/image-header-desktop.jpg");
   background: linear-gradient(rgba(123, 68, 161, 0.6)), url("/images/image-header-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,20 +58,17 @@ p {
   border-end-end-radius: 10px;
   border-start-end-radius: 10px;
 }
-
 @media (max-width: 1140px) {
   .landing .container .row .image {
     min-width: 100%;
   }
 }
-
 .landing .container .row .col {
   margin-top: 3rem;
   font-size: 12px;
   letter-spacing: 3px;
   width: 70%;
 }
-
 .landing .container .row .col .stats {
   color: #fefffd;
   font-size: 24px;
@@ -102,10 +79,6 @@ p {
 
 @media (max-width: 1140px) {
   .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
