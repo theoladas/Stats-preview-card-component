@@ -28,15 +28,18 @@ p {
     max-width: 1200px;
     background-color: #1c193b;
     border-radius: 10px;
-
     .row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       .info {
         padding: 4rem;
         width: 50%;
+        @media (max-width: 1024px) {
+          h1 {
+            font-size: 38px;
+          }
+        }
         p {
           line-height: 25px;
           width: 80%;
@@ -45,41 +48,39 @@ p {
           color: #a75dd7;
         }
       }
-
       .image {
         width: 50%;
         height: 480px;
-        background: linear-gradient(rgba(123, 68, 161, 0.6)),
-          url("/images/image-header-desktop.jpg");
+        // background: -webkit-linear-gradient(rgba(123, 68, 161, 0.6)),
+        //   url("images/image-header-desktop.jpg");
+        background: url("images/image-header-desktop.jpg");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         border-end-end-radius: 10px;
         border-start-end-radius: 10px;
-        @media (max-width: 1140px) {
-          min-width: 100%;
+        // height: auto;
+        @media (max-width: 1024px) {
+          max-height: auto;
         }
       }
-
       .col {
         margin-top: 3rem;
         font-size: 12px;
         letter-spacing: 3px;
         width: 70%;
+        @media (max-width: 1024px) {
+          margin-right: 10px;
+        }
         .stats {
           color: #fefffd;
           font-size: 24px;
           margin-bottom: 0.3rem;
           letter-spacing: 0px;
           font-weight: 600;
+          @media (max-width: 1024px) {
+            font-size: 22px;
+          }
         }
       }
     }
-  }
-}
-
-@media (max-width: 1140px) {
-  .row {
-    flex-direction: column;
   }
 }

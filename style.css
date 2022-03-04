@@ -41,6 +41,11 @@ p {
   padding: 4rem;
   width: 50%;
 }
+@media (max-width: 1024px) {
+  .landing .container .row .info h1 {
+    font-size: 38px;
+  }
+}
 .landing .container .row .info p {
   line-height: 25px;
   width: 80%;
@@ -51,16 +56,14 @@ p {
 .landing .container .row .image {
   width: 50%;
   height: 480px;
-  background: linear-gradient(rgba(123, 68, 161, 0.6)), url("/images/image-header-desktop.jpg");
+  background: url("images/image-header-desktop.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   border-end-end-radius: 10px;
   border-start-end-radius: 10px;
 }
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
   .landing .container .row .image {
-    min-width: 100%;
+    max-height: auto;
   }
 }
 .landing .container .row .col {
@@ -69,6 +72,11 @@ p {
   letter-spacing: 3px;
   width: 70%;
 }
+@media (max-width: 1024px) {
+  .landing .container .row .col {
+    margin-right: 10px;
+  }
+}
 .landing .container .row .col .stats {
   color: #fefffd;
   font-size: 24px;
@@ -76,9 +84,8 @@ p {
   letter-spacing: 0px;
   font-weight: 600;
 }
-
-@media (max-width: 1140px) {
-  .row {
-    flex-direction: column;
+@media (max-width: 1024px) {
+  .landing .container .row .col .stats {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
