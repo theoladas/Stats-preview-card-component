@@ -149,6 +149,8 @@ p {
 }
 .landing .container .row .image {
   background: linear-gradient(rgba(123, 68, 161, 0.6), transparent);
+  border-end-end-radius: 10px;
+  border-start-end-radius: 10px;
 }
 @media (max-width: 768px) {
   .landing .container .row .image {
@@ -157,8 +159,15 @@ p {
   }
 }
 .landing .container .row .image img {
-  background-size: cover;
-  border-top-left-radius: 10px;
+  border-end-end-radius: 10px;
   border-start-end-radius: 10px;
-  width: 100%;
+  background-size: cover;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .landing .container .row .image img {
+    border-top-left-radius: 10px;
+    border-start-end-radius: 10px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
