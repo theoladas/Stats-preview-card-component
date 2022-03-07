@@ -36,6 +36,11 @@ p {
   background-color: #1c193b;
   border-radius: 10px;
 }
+@media (max-width: 475px) {
+  .landing .container {
+    margin: 2rem auto;
+  }
+}
 .landing .container .row {
   display: flex;
   align-items: center;
@@ -53,6 +58,13 @@ p {
 @media (max-width: 768px) {
   .landing .container .row .info {
     order: 2;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 475px) {
+  .landing .container .row .info {
+    padding: 2rem;
   }
 }
 @media (max-width: 1024px) {
@@ -63,6 +75,16 @@ p {
 @media (max-width: 920px) {
   .landing .container .row .info h1 {
     font-size: 30px;
+  }
+}
+@media (max-width: 365px) {
+  .landing .container .row .info h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 475px) {
+  .landing .container .row .info h1 {
+    font-size: 20px;
   }
 }
 .landing .container .row .info p {
@@ -76,6 +98,54 @@ p {
 }
 .landing .container .row .info span {
   color: #a75dd7;
+}
+@media (max-width: 768px) {
+  .landing .container .row .info .row {
+    flex-direction: row;
+  }
+}
+.landing .container .row .info .row .col {
+  margin-top: 3rem;
+  font-size: 12px;
+  letter-spacing: 3px;
+  width: 70%;
+}
+@media (max-width: 1024px) {
+  .landing .container .row .info .row .col {
+    margin-right: 10px;
+  }
+}
+.landing .container .row .info .row .col .stats {
+  color: #fefffd;
+  font-size: 24px;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .landing .container .row .info .row .col .stats {
+    font-size: 22px;
+  }
+}
+@media (max-width: 920px) {
+  .landing .container .row .info .row .col .stats {
+    font-size: 18px;
+  }
+}
+@media (max-width: 475px) {
+  .landing .container .row .info .row .col .stats {
+    font-size: 16px;
+  }
+}
+@media (max-width: 920px) {
+  .landing .container .row .info .row .col p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 475px) {
+  .landing .container .row .info .row .col p {
+    font-size: 8px;
+  }
 }
 .landing .container .row .image {
   background: linear-gradient(rgba(123, 68, 161, 0.6), transparent);
@@ -91,37 +161,4 @@ p {
   border-top-left-radius: 10px;
   border-start-end-radius: 10px;
   width: 100%;
-}
-.landing .container .row .col {
-  margin-top: 3rem;
-  font-size: 12px;
-  letter-spacing: 3px;
-  width: 70%;
-}
-@media (max-width: 1024px) {
-  .landing .container .row .col {
-    margin-right: 10px;
-  }
-}
-.landing .container .row .col .stats {
-  color: #fefffd;
-  font-size: 24px;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0px;
-  font-weight: 600;
-}
-@media (max-width: 1024px) {
-  .landing .container .row .col .stats {
-    font-size: 22px;
-  }
-}
-@media (max-width: 920px) {
-  .landing .container .row .col .stats {
-    font-size: 18px;
-  }
-}
-@media (max-width: 920px) {
-  .landing .container .row .col p {
-    font-size: 10px;
-  }
 }/*# sourceMappingURL=style.css.map */

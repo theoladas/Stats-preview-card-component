@@ -29,6 +29,9 @@ p {
     max-width: 1200px;
     background-color: #1c193b;
     border-radius: 10px;
+    @media (max-width: 475px) {
+      margin: 2rem auto;
+    }
     .row {
       display: flex;
       align-items: center;
@@ -41,6 +44,11 @@ p {
         width: 50%;
         @media (max-width: 768px) {
           order: 2;
+          width: 100%;
+          text-align: center;
+        }
+        @media (max-width: 475px) {
+          padding: 2rem;
         }
         h1 {
           @media (max-width: 1024px) {
@@ -48,6 +56,12 @@ p {
           }
           @media (max-width: 920px) {
             font-size: 30px;
+          }
+          @media (max-width: 365px) {
+            font-size: 25px;
+          }
+          @media (max-width: 475px) {
+            font-size: 20px;
           }
         }
         p {
@@ -59,6 +73,45 @@ p {
         }
         span {
           color: #a75dd7;
+        }
+
+        .row {
+          @media (max-width: 768px) {
+            flex-direction: row;
+          }
+          .col {
+            margin-top: 3rem;
+            font-size: 12px;
+            letter-spacing: 3px;
+            width: 70%;
+            @media (max-width: 1024px) {
+              margin-right: 10px;
+            }
+            .stats {
+              color: #fefffd;
+              font-size: 24px;
+              margin-bottom: 0.3rem;
+              letter-spacing: 0px;
+              font-weight: 600;
+              @media (max-width: 1024px) {
+                font-size: 22px;
+              }
+              @media (max-width: 920px) {
+                font-size: 18px;
+              }
+              @media (max-width: 475px) {
+                font-size: 16px;
+              }
+            }
+            p {
+              @media (max-width: 920px) {
+                font-size: 10px;
+              }
+              @media (max-width: 475px) {
+                font-size: 8px;
+              }
+            }
+          }
         }
       }
       .image {
@@ -73,33 +126,6 @@ p {
           border-top-left-radius: 10px;
           border-start-end-radius: 10px;
           width: 100%;
-        }
-      }
-      .col {
-        margin-top: 3rem;
-        font-size: 12px;
-        letter-spacing: 3px;
-        width: 70%;
-        @media (max-width: 1024px) {
-          margin-right: 10px;
-        }
-        .stats {
-          color: #fefffd;
-          font-size: 24px;
-          margin-bottom: 0.3rem;
-          letter-spacing: 0px;
-          font-weight: 600;
-          @media (max-width: 1024px) {
-            font-size: 22px;
-          }
-          @media (max-width: 920px) {
-            font-size: 18px;
-          }
-        }
-        p {
-          @media (max-width: 920px) {
-            font-size: 10px;
-          }
         }
       }
     }
