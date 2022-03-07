@@ -114,24 +114,23 @@ p {
           }
         }
       }
+
       .image {
-        background: linear-gradient(rgba(123, 68, 161, 0.6), transparent);
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(45deg, rgba(123, 68, 161, 0.7), transparent),
+          url("images/image-header-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         border-end-end-radius: 10px;
         border-start-end-radius: 10px;
         @media (max-width: 768px) {
           order: 1;
           width: 100%;
-        }
-        img {
-          border-end-end-radius: 10px;
+          border-top-left-radius: 10px;
           border-start-end-radius: 10px;
-          background-size: cover;
-          max-width: 100%;
-          @media (max-width: 768px) {
-            border-top-left-radius: 10px;
-            border-start-end-radius: 10px;
-            width: 100%;
-          }
+          border-end-end-radius: 0px;
         }
       }
     }
